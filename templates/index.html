@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Django Template</title>
+</head>
+<body>
+    <h1>Welcome to our Django App!</h1>
+    <p>This is a sample HTML file rendered using Django templating engine.</p>
+    
+    <!-- Example of accessing data passed from views.py -->
+    <p>Hello, {{ username }}!</p>
+    
+    <!-- Example of looping through a list passed from views.py -->
+    <ul>
+        {% for item in items %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+    
+    <!-- Example of conditional rendering -->
+    {% if condition %}
+        <p>This content is rendered conditionally.</p>
+    {% else %}
+        <p>This content is rendered when the condition is not met.</p>
+    {% endif %}
+</body>
+</html>
